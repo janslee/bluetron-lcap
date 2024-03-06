@@ -1,7 +1,8 @@
 import openai
+import streamlit as st
 from openai import OpenAI
 
-client = OpenAI(api_key="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")
+client = OpenAI(api_key=st.secrets["OPENAI_API_KEY"])
 import streamlit as st
 import subprocess
 
